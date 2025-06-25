@@ -33,23 +33,17 @@ export default function Navbar() {
             </div>
           </div>
           {/* Profile/User Button */}
-          <Image
-            src="/cunteryflag.svg" alt="Country Flag" width={81} height={20} className="cursor-pointer"
-          />
-          <button className="ml-8 w-16 h-10 rounded-full bg-gradient-to-r from-blue-800 to-purple-700 opacity-60 hover:opacity-100 transition" />
-        </div>
-
-        {/* Mobile Hamburger */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="focus:outline-none"
-            aria-label="Open Menu"
-          >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <div className="flex items-center bg-[#23234A] rounded-full px-4 py-1 gap-2 shadow border border-blue-200/20 cursor-pointer hover:bg-[#2d2d5a] transition">
+            <Image
+              src="/cunteryflag.svg"
+              alt="Country Flag"
+              width={28}
+              height={20}
+              className="object-cover"
+            />
+            <span className="text-white text-base font-semibold tracking-wide">EN</span>
+          </div>
+        
         </div>
       </div>
 

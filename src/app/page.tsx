@@ -6,11 +6,11 @@ import Image from "next/image";
 function GameSlider() {
   const sliderImages = [
     "/Rectangle 1.svg",
-    "/Rectangle 2.svg",
-    "/Rectangle 3.svg",
-    "/logoGH.svg",
+    "/minecraft.png",
     "/Rectangle 1.svg",
+    "/ark.png",
     "/Rectangle 1.svg",
+    "/rust.png",
     "/Rectangle 1.svg",
   ];
   const [current, setCurrent] = useState(0);
@@ -154,7 +154,7 @@ export default function Home() {
                focus:ring-2 focus:ring-blue-300
                px-6 py-2 ml-4
               "         
-                style={{ minWidth: "170px" }}
+                style={{ minWidth: "243px", minHeight: "63px" }}
               >
                 15% FIRST MONTH
               </button>
@@ -305,9 +305,9 @@ export default function Home() {
              </p>
              <section className="w-full flex justify-center items-center py-16 bg-transparent">
   <div className="flex flex-col items-center w-full">
-    <div className="flex flex-col md:flex-row gap-8 w-full justify-center">
+    <div className="flex flex-col md:flex-row gap-8 w-full h-[552px] justify-center">
       {/* Left Box */}
-      <div className="flex-1 bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-500 rounded-[32px] p-8 shadow-lg w-[802px] h-[552]px"
+      <div className="flex-1 bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-500 rounded-[32px] p-8 shadow-lg h-[552]px"
            style={{ boxShadow: "0 0 40px 0 #1a237e33" }}>
         <h3 className="text-white font-astrospace text-2xl font-bold mb-6">GAMING EXPERIENCE</h3>
         <ul className="flex flex-col gap-4">
@@ -370,7 +370,7 @@ export default function Home() {
       </div>
     </div>
     {/* Bottom Line */}
-    <p className="text-blue-100 text-base text-center mt-10 max-w-4xl">
+    <p className="text-blue-100 text-base text-center mt-8">
       Every configuration, every rule you set in your game hosting matters. Our professional-grade tools panel has been carefully designed to give you the power
     </p>
   </div>
@@ -379,7 +379,233 @@ export default function Home() {
           </section>             
 
       </div>
-
+      <section className=" flex flex-col items-center min-h-screen py-20 bg-[url('/hero4.png')] bg-cover bg-no-repeat relative">
+        {/* Heading */}
+        <h2 className="text-white text-4xl md:text-5xl font-astrospace font-extrabold text-center mb-2 tracking-wide">
+          WHY <span className="text-blue-400">GAMEPROHOST?</span>
+          <br />
+          <span className="text-white">LEADING GAME SERVER RENTAL</span>
+        </h2>
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-16 w-full max-w-8x2l px-12">
+          {/* Card 1 */}
+          <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
+            <span className="text-blue-400 mb-4">
+              {/* Keyboard Icon */}
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><rect x="8" y="16" width="24" height="12" rx="2" stroke="#3B82F6" strokeWidth="2"/><rect x="12" y="20" width="2" height="2" rx="1" fill="#3B82F6"/><rect x="16" y="20" width="2" height="2" rx="1" fill="#3B82F6"/><rect x="20" y="20" width="2" height="2" rx="1" fill="#3B82F6"/><rect x="24" y="20" width="2" height="2" rx="1" fill="#3B82F6"/><rect x="28" y="20" width="2" height="2" rx="1" fill="#3B82F6"/></svg>
+            </span>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+              <span className="uppercase text-white font-bold text-base">User-friendly web interface</span>
+              <span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+            </div>
+            <p className="text-blue-100 text-sm mt-2">
+              GameProHost simplifies everything with intuitive processes, allowing users to enjoy benefits without prior knowledge, making the platform an easy-to-use solution.
+            </p>
           </div>
-  );
-}
+          {/* Card 2 */}
+          <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
+            <span className="text-blue-400 mb-4">
+              {/* Chip Icon */}
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><rect x="12" y="12" width="16" height="16" rx="4" stroke="#3B82F6" strokeWidth="2"/><rect x="18" y="18" width="4" height="4" rx="2" fill="#3B82F6"/></svg>
+            </span>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+              <span className="uppercase text-white font-bold text-base">No lag</span>
+              <span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+            </div>
+            <p className="text-blue-100 text-sm mt-2">
+              Leave behind micro-freezing while you play. We have high-end equipment that has the ability to deliver optimal performance even under high demand conditions.
+            </p>
+          </div>
+          {/* Card 3 */}
+          <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
+            <span className="text-blue-400 mb-4">
+              {/* Server Icon */}
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><rect x="10" y="16" width="20" height="8" rx="2" stroke="#3B82F6" strokeWidth="2"/><rect x="14" y="20" width="4" height="2" rx="1" fill="#3B82F6"/></svg>
+            </span>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+              <span className="uppercase text-white font-bold text-base">Hardware NVME y AMD</span>
+              <span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+            </div>
+            <p className="text-blue-100 text-sm mt-2">
+              Our gaming servers feature the latest CPU technology and NVME SSD storage, allowing lightning-fast processing and easy management via our control panel.
+            </p>
+          </div>
+          {/* Card 4 */}
+          <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
+            <span className="text-blue-400 mb-4">
+              {/* Headset Icon */}
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><circle cx="20" cy="20" r="12" stroke="#3B82F6" strokeWidth="2"/><path d="M12 28v-2a4 4 0 014-4h8a4 4 0 014 4v2" stroke="#3B82F6" strokeWidth="2"/></svg>
+            </span>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+              <span className="uppercase text-white font-bold text-base">24/7 support</span>
+              <span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+            </div>
+            <p className="text-blue-100 text-sm mt-2">
+              We have a team of trained specialists who are available to answer all your questions and help you with your server.
+            </p>
+          </div>
+          {/* Card 5 */}
+          <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
+            <span className="text-blue-400 mb-4">
+              {/* Cog Icon */}
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><circle cx="20" cy="20" r="8" stroke="#3B82F6" strokeWidth="2"/><path d="M20 12v-2M20 30v-2M28 20h2M10 20h2M25.66 25.66l1.42 1.42M12.92 12.92l1.42 1.42M25.66 14.34l1.42-1.42M12.92 27.08l1.42-1.42" stroke="#3B82F6" strokeWidth="2"/></svg>
+            </span>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+              <span className="uppercase text-white font-bold text-base">Freedom of management</span>
+              <span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+            </div>
+            <p className="text-blue-100 text-sm mt-2">
+              A hosting for game servers without restrictions. You will be able to access all files from the panel or from FTP to edit, delete or upload files.
+            </p>
+          </div>
+          {/* Card 6 */}
+          <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
+            <span className="text-blue-400 mb-4">
+              {/* Shield Icon */}
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><path d="M20 8l10 4v6c0 7.732-5.373 14.042-10 16-4.627-1.958-10-8.268-10-16v-6l10-4z" stroke="#3B82F6" strokeWidth="2"/><path d="M16 20l3 3 5-5" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </span>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+              <span className="uppercase text-white font-bold text-base">Backups of your server</span>
+              <span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+            </div>
+            <p className="text-blue-100 text-sm mt-2">
+              Go back to your previous games with a click. Each server has a backup of all games for a period of 7 days.
+            </p>
+          </div>
+        </div>
+
+                <section className="w-full flex flex-col items-center py-24">
+        <h2 className="text-white text-3xl md:text-4xl lg:text-4xl font-astrospace font-extrabold text-center mb-6 tracking-wide uppercase">
+          YOU ARE JUST ONE CLICK AWAY FROM HAVING YOUR OWN GAME SERVER,<br />
+          NOTHING WILL SLOW DOWN YOUR GAMES.
+        </h2>
+        <button className="mt-6 mb-12 px-10 py-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold text-lg shadow-lg hover:from-blue-700 hover:to-blue-500 transition">
+          START YOUR SERVER RIGHT NOW
+        </button>
+        <div className="w-full max-w-3xl mx-auto border border-blue-200/40 rounded-2xl bg-gradient-to-br from-[#101B2B]/70 to-[#23234A]/70 px-8 py-8 mb-20">
+          <div className="flex items-center justify-center mb-4">
+            <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+            <span className="uppercase text-white font-bold text-base mx-4 tracking-wide">DDOS PROTECTION AS STANDARD</span>
+            <span className="w-2 h-2 bg-blue-200 rounded-full"></span>
+          </div>
+          <p className="text-blue-100 text-center text-base mb-2">
+            DDoS attacks are more common than you think, especially in the most competitive games.
+          </p>
+          <p className="text-blue-100 text-center text-base">
+            We guarantee the protection of our servers in order to keep you online 24 hours a day, 7 days a week without downtime thanks to our Firewall against massive traffic.
+          </p>
+        </div>
+        <h2 className="text-white text-3xl md:text-4xl font-astrospace font-extrabold text-center mb-4 tracking-wide uppercase">
+          POPULAR GAMES TO <span className="text-blue-400">RENT SERVERS</span>
+        </h2>
+        <p className="text-blue-100 text-lg text-center max-w-2xl mb-2">
+          Game server rentals have become increasingly popular due to the need for specialized servers to host video games and deliver an optimal gaming experience. Let's look at some of the most popular games where you can rent servers.
+        </p>
+      </section>  
+        <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-cover bg-no-repeat py-24 relative">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-[98vw] max-w-[1700px]">
+    {/* Minecraft */}
+    <div>
+      <h3 className="text-white font-astrospace text-2xl mb-4 tracking-wide">MINECRAFT</h3>
+      <p className="text-blue-100 text-lg mb-8">
+        Enter Minecraft, a limitless world of blocks and endless possibilities. A universe where you create, architect, explore and survive. Minecraft offers you a robust, dynamic sandbox. Survival awaits: you expect resources and fight adversity to stay strong and creative, while others collaborate, construct cities, or compete on custom servers. Whether you want to build magnificent cities, create your own adventure or survive the tension they began in Minecraft, you decide your own adventure. Start today and discover why Minecraft has captured the hearts of millions.
+      </p>
+    </div>
+    <div className="flex justify-end">
+      <div className="relative rounded-[36px] flex items-center justify-center">
+        {/* Gradient Border */}
+        <div
+          className="absolute inset-0 rounded-[36px] pointer-events-none"
+          style={{
+            padding: "4px",
+            background: "linear-gradient(135deg, #395BEF 0%, #8B5CF6 100%)",
+            WebkitMask:
+              "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+            WebkitMaskComposite: "xor",
+            maskComposite: "exclude",
+          }}
+        />
+        {/* Card Content */}
+        <div className="relative rounded-[32px] overflow-hidden bg-[#181A2A]">
+          <img
+            src="/minecraft.png"
+            alt="Minecraft"
+            className="w-[420px] h-[220px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+    {/* ARK */}
+    <div className="flex justify-start">
+      <div className="relative rounded-[36px] flex items-center justify-center">
+        {/* Gradient Border */}
+        <div
+          className="absolute inset-0 rounded-[36px] pointer-events-none"
+          style={{
+            padding: "4px",
+            background: "linear-gradient(135deg, #395BEF 0%, #8B5CF6 100%)",
+            WebkitMask:
+              "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+            WebkitMaskComposite: "xor",
+            maskComposite: "exclude",
+          }}
+        />
+        {/* Card Content */}
+        <div className="relative rounded-[32px] overflow-hidden bg-[#181A2A]">
+          <img
+            src="/ark.png"
+            alt="ARK"
+            className="w-[420px] h-[220px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 className="text-white font-astrospace text-2xl mb-4 tracking-wide">ARK</h3>
+      <p className="text-blue-100 text-lg mb-8">
+        In ARK: Survival Evolved, you wake up on an island full of dinosaurs and other prehistoric creatures. You must build, develop, domesticate and survive to prevail. Create your own rules, tame the wildest beings and form complete tribes to dominate the island. With hundreds of mods, the game lets you live an unrivaled prehistoric experience and cater to an unmatched gaming challenge. Are you ready to face the challenge of survival in this prehistoric order? Join the ark today!
+      </p>
+    </div>
+    {/* RUST */}
+    <div>
+      <h3 className="text-white font-astrospace text-2xl mb-4 tracking-wide">RUST</h3>
+      <p className="text-blue-100 text-lg mb-8">
+        Rust throws you into a post-apocalyptic world where only the strongest survive. With nothing more than a stone and a torch, you must develop creative solutions, build shelters, form alliances and defend yourself from dangers. Collect resources, craft weapons, and build your own base. Survival comes down to skill: form alliances or face other players in your journey to the challenge? Try today and see if you can survive rust.
+      </p>
+    </div>
+    <div className="flex justify-end">
+      <div className="relative rounded-[36px] flex items-center justify-center">
+        {/* Gradient Border */}
+        <div
+          className="absolute inset-0 rounded-[36px] pointer-events-none"
+          style={{
+            padding: "4px",
+            background: "linear-gradient(135deg, #395BEF 0%, #8B5CF6 100%)",
+            WebkitMask:
+              "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+            WebkitMaskComposite: "xor",
+            maskComposite: "exclude",
+          }}
+        />
+        {/* Card Content */}
+        <div className="relative rounded-[32px] overflow-hidden bg-[#181A2A]">
+          <img
+            src="/rust.png"
+            alt="Rust"
+            className="w-[420px] h-[220px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+            </section>
+       
+      </div>
+);}
