@@ -258,46 +258,18 @@ export default function Home() {
             </p>
 
             <div className="flex flex-row justify-center items-center w-full gap-8 relative">
-
-              <div className="flex flex-col gap-6 flex-1">
-                <div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Full FTP access
-                </div>
-                <div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Manage database information
-                </div>
-                <div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Manage users on your server
-                </div>
-                <div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Monitor performance statistics
-                </div>
-              </div>
               <div className="flex flex-col items-center justify-center flex-shrink-0 z-10">
                 <div className="p-6 flex items-center justify-center mt-6">
                   <Image
                     src="/logoGH.svg"
                     alt="GH Logo"
-                    width={528}
+                    width={1662}
                     height={540}
                     className="object-contain"
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-6 flex-1">
-                <div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Perform backups
-                </div>
-                <div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Technical support
-                </div>
-                <div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Free subdomain
-                </div>
-                <div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex items-center text-white text-lg font-medium shadow-lg">
-                  Automatic backups
-                </div>
-              </div>
+         
             </div>
             <p className="text-blue-100 text-lg text-center mt-12">
               We know your needs and we are here to guide you through every step of the process.
@@ -386,7 +358,7 @@ export default function Home() {
           <span className="text-white">LEADING GAME SERVER RENTAL</span>
         </h2>
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-16 w-full max-w-8x2l px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-16 w-[1637px] px-12">
           {/* Card 1 */}
           <div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
             <span className="text-blue-400 mb-4">
@@ -507,107 +479,18 @@ export default function Home() {
             Game server rentals have become increasingly popular due to the need for specialized servers to host video games and deliver an optimal gaming experience. Let's look at some of the most popular games where you can rent servers.
           </p>
         </section>
-        <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-cover bg-no-repeat py-24 relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-[98vw] max-w-[1700px]">
-            {/* Minecraft */}
-            <div>
-              <h3 className="text-white font-astrospace text-2xl mb-4 tracking-wide">MINECRAFT</h3>
-              <p className="text-blue-100 text-lg mb-8">
-                Enter Minecraft, a limitless world of blocks and endless possibilities. A universe where you create, architect, explore and survive. Minecraft offers you a robust, dynamic sandbox. Survival awaits: you expect resources and fight adversity to stay strong and creative, while others collaborate, construct cities, or compete on custom servers. Whether you want to build magnificent cities, create your own adventure or survive the tension they began in Minecraft, you decide your own adventure. Start today and discover why Minecraft has captured the hearts of millions.
-              </p>
-            </div>
-            <div className="flex justify-end">
-              <div className="relative rounded-[36px] flex items-center justify-center">
-                {/* Gradient Border */}
-                <div
-                  className="absolute inset-0 rounded-[36px] pointer-events-none"
-                  style={{
-                    padding: "4px",
-                    background: "linear-gradient(135deg, #395BEF 0%, #8B5CF6 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                />
-                {/* Card Content */}
-                <div className="relative rounded-[32px] overflow-hidden bg-[#181A2A]">
-                  <img
-                    src="/minecraft.png"
-                    alt="Minecraft"
-                    className="w-[420px] h-[220px] object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            {/* ARK */}
-            <div className="flex justify-start">
-              <div className="relative rounded-[36px] flex items-center justify-center">
-                {/* Gradient Border */}
-                <div
-                  className="absolute inset-0 rounded-[36px] pointer-events-none"
-                  style={{
-                    padding: "4px",
-                    background: "linear-gradient(135deg, #395BEF 0%, #8B5CF6 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                />
-                {/* Card Content */}
-                <div className="relative rounded-[32px] overflow-hidden bg-[#181A2A]">
-                  <img
-                    src="/ark.png"
-                    alt="ARK"
-                    className="w-[420px] h-[220px] object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-white font-astrospace text-2xl mb-4 tracking-wide">ARK</h3>
-              <p className="text-blue-100 text-lg mb-8">
-                In ARK: Survival Evolved, you wake up on an island full of dinosaurs and other prehistoric creatures. You must build, develop, domesticate and survive to prevail. Create your own rules, tame the wildest beings and form complete tribes to dominate the island. With hundreds of mods, the game lets you live an unrivaled prehistoric experience and cater to an unmatched gaming challenge. Are you ready to face the challenge of survival in this prehistoric order? Join the ark today!
-              </p>
-            </div>
-            {/* RUST */}
-            <div>
-              <h3 className="text-white font-astrospace text-2xl mb-4 tracking-wide">RUST</h3>
-              <p className="text-blue-100 text-lg mb-8">
-                Rust throws you into a post-apocalyptic world where only the strongest survive. With nothing more than a stone and a torch, you must develop creative solutions, build shelters, form alliances and defend yourself from dangers. Collect resources, craft weapons, and build your own base. Survival comes down to skill: form alliances or face other players in your journey to the challenge? Try today and see if you can survive rust.
-              </p>
-            </div>
-            <div className="flex justify-end">
-              <div className="relative rounded-[36px] flex items-center justify-center">
-                {/* Gradient Border */}
-                <div
-                  className="absolute inset-0 rounded-[36px] pointer-events-none"
-                  style={{
-                    padding: "4px",
-                    background: "linear-gradient(135deg, #395BEF 0%, #8B5CF6 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                />
-                {/* Card Content */}
-                <div className="relative rounded-[32px] overflow-hidden bg-[#181A2A]">
-                  <img
-                    src="/rust.png"
-                    alt="Rust"
-                    className="w-[420px] h-[220px] object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+        <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-cover bg-no-repeat relative py-12">
+          <Image
+            src="/gameallpic.svg"
+            alt="Popular Games"
+            width={1687}
+            height={1710}
+            className="w-full max-w-[1637px] object-cover mb-12"/>
         </section>
       </section>
       <section className="w-full py-24 px-4 relative overflow-hidden bg['/hero6.png'] bg-cover bg-no-repeat">
         {/* Features */}
-        <div className="flex flex-col items-center mx-auto">
+        <div className="flex flex-col items-center mx-auto w-[1637px]">
           <h2 className="text-3xl md:text-4xl font-astrospace font-extrabold text-white mb-2 tracking-wide uppercase">
             GAME SERVER <span className="text-blue-400">FEATURES</span>
           </h2>
@@ -642,7 +525,7 @@ export default function Home() {
 
 
         {/* Testimonials */}
-        <div className="max-w-6xl mx-auto mt-24">
+        <div className="max-w-[1637px] mx-auto mt-24">
           <h3 className="text-center text-3xl md:text-4xl font-astrospace font-extrabold text-white mb-10 tracking-wide uppercase">
             WHAT OUR <span className="text-blue-400">CUSTOMERS</span> SAY...
           </h3>
