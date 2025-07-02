@@ -2,6 +2,7 @@
 import Navbar from "./Components/Layout/Navbar/navbar";
 import { useState } from "react";
 import Image from "next/image";
+import Footer from "./Components/Layout/Footer/footer";
 
 function GameSlider() {
   const sliderImages = [
@@ -479,16 +480,16 @@ export default function Home() {
             Game server rentals have become increasingly popular due to the need for specialized servers to host video games and deliver an optimal gaming experience. Let's look at some of the most popular games where you can rent servers.
           </p>
         </section>
-        <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-cover bg-no-repeat relative py-12">
+        <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-no-repeat relative py-12">
           <Image
             src="/gameallpic.svg"
             alt="Popular Games"
             width={1687}
             height={1710}
-            className="w-full max-w-[1637px] object-cover mb-12"/>
+            className="w-full max-w-[1637px] object-cover "/>
         </section>
       </section>
-      <section className="w-full py-24 px-4 relative overflow-hidden bg['/hero6.png'] bg-cover bg-no-repeat">
+      <section className="w-full py-24 px-4 relative overflow-hidden bg-[url('/featurebg.png')] bg-cover bg-no-repeat">
         {/* Features */}
         <div className="flex flex-col items-center mx-auto w-[1637px]">
           <h2 className="text-3xl md:text-4xl font-astrospace font-extrabold text-white mb-2 tracking-wide uppercase">
@@ -531,52 +532,49 @@ export default function Home() {
           </h3>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
             {/* Testimonial Card 1 */}
-            <div className="bg-[#23234A] rounded-2xl p-8 flex flex-col items-center w-full max-w-xs shadow-lg border border-blue-200/30">
-              <div className="w-20 h-20 rounded-full bg-blue-900 mb-4 flex items-center justify-center overflow-hidden">
-                <Image src="/avatar1.png" alt="Agnes Remi" width={80} height={80} />
-              </div>
-              <span className="text-white font-bold text-lg mb-2">Agnes Remi</span>
-              <p className="text-blue-100 text-center text-base mb-4">
+            <div className="bg-[url('/agnes1.svg')] p-8 flex flex-col items-center w-[456px]  h-[513px]">
+            <span className="text-white font-bold text-lg mb-2 mt-64">Agnes Remi</span>
+            <p className="text-blue-100 text-center text-base mb-6 w-[380px] h-[134px]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               </p>
-              <div className="flex gap-1 mb-2">
+            <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} width="18" height="18" fill="#FBBF24" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
+                  <svg key={i} width="18" height="18" fill="#FBBF24" viewBox="0 0 20 20">
+                    <polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" />
+                  </svg>
                 ))}
               </div>
-              <span className="text-blue-200 text-xs">03/04/2024</span>
+              <span className="text-blue-200 text-xs">2024.03.02</span>
             </div>
             {/* Testimonial Card 2 */}
-            <div className="bg-[#23234A] rounded-2xl p-8 flex flex-col items-center w-full max-w-xs shadow-lg border border-blue-200/30">
-              <div className="w-20 h-20 rounded-full bg-blue-900 mb-4 flex items-center justify-center overflow-hidden">
-                <Image src="/avatar2.png" alt="Agnes Remi" width={80} height={80} />
-              </div>
-              <span className="text-white font-bold text-lg mb-2">Agnes Remi</span>
-              <p className="text-blue-100 text-center text-base mb-4">
+             <div className="bg-[url('/agnes1.svg')] p-8 flex flex-col items-center w-[456px]  h-[513px]">
+            <span className="text-white font-bold text-lg mb-2 mt-64">Agnes Remi</span>
+            <p className="text-blue-100 text-center text-base mb-6 w-[380px] h-[134px]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               </p>
-              <div className="flex gap-1 mb-2">
+            <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} width="18" height="18" fill="#FBBF24" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
+                  <svg key={i} width="18" height="18" fill="#FBBF24" viewBox="0 0 20 20">
+                    <polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" />
+                  </svg>
                 ))}
               </div>
-              <span className="text-blue-200 text-xs">03/04/2024</span>
+              <span className="text-blue-200 text-xs">2024.03.02</span>
             </div>
             {/* Testimonial Card 3 */}
-            <div className="bg-[#23234A] rounded-2xl p-8 flex flex-col items-center w-full max-w-xs shadow-lg border border-blue-200/30">
-              <div className="w-20 h-20 rounded-full bg-blue-900 mb-4 flex items-center justify-center overflow-hidden">
-                <Image src="/avatar3.png" alt="Agnes Remi" width={80} height={80} />
-              </div>
-              <span className="text-white font-bold text-lg mb-2">Agnes Remi</span>
-              <p className="text-blue-100 text-center text-base mb-4">
+             <div className="bg-[url('/agnes1.svg')] p-8 flex flex-col items-center w-[456px]  h-[513px]">
+            <span className="text-white font-bold text-lg mb-2 mt-64">Agnes Remi</span>
+            <p className="text-blue-100 text-center text-base mb-6 w-[380px] h-[134px]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               </p>
-              <div className="flex gap-1 mb-2">
+            <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} width="18" height="18" fill="#FBBF24" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
+                  <svg key={i} width="18" height="18" fill="#FBBF24" viewBox="0 0 20 20">
+                    <polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" />
+                  </svg>
                 ))}
               </div>
-              <span className="text-blue-200 text-xs">03/04/2024</span>
+              <span className="text-blue-200 text-xs">2024.03.02</span>
             </div>
           </div>
           {/* Carousel Dots */}
@@ -703,6 +701,7 @@ export default function Home() {
           </details>
         </div>
       </section>
+      <Footer/>
 
     </div>
   );
