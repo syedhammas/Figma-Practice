@@ -6,15 +6,14 @@ import Footer from "./Components/Layout/Footer/footer";
 
 function GameSlider() {
   const sliderImages = [
-    "/Rectangle 1.svg",
-    "/minecraft.png",
-    "/Rectangle 1.svg",
-    "/ark.png",
-    "/Rectangle 1.svg",
-    "/rust.png",
-    "/Rectangle 1.svg",
+    "/g1.svg",
+    "/g2.svg",
+    "/g3.svg",
+    "/g4.svg",
+    "/g3.svg",
+    "/g4.svg",
   ];
-  const [current, setCurrent] = useState(0);
+   const [current, setCurrent] = useState(0);
 
   const prevSlide = () =>
     setCurrent((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1));
@@ -34,35 +33,35 @@ function GameSlider() {
         <div className="flex gap-8 w-full px-4 mt-16 justify-center">
           {/* Left Card */}
           <div className="flex-1 flex items-center justify-center transition-all duration-500 scale-90 opacity-60">
-            <Image
+              <Image
               src={sliderImages[getIndex(current - 1)]}
               alt="Prev Game"
-              width={300}
-              height={340}
-              className="rounded-2xl object-cover w-full h-full"
-              style={{ maxHeight: 320, maxWidth: 320 }}
+              width={497}
+              height={576}
+                className="rounded-2xl object-cover w-full h-full"
+              style={{ maxHeight: 576, maxWidth: 497 }}
             />
-          </div>
+              </div>
           {/* Center Card */}
-          <div className="flex-1 rounded-2xl bg-[#23234A] border-2 border-blue-400 h-[360px] shadow-lg scale-105 z-10 flex items-center justify-center transition-all duration-500">
+          <div className="flex-1 rounded-2xl  h-[576px]  scale-105 z-10 flex items-center justify-center transition-all duration-500">
             <Image
               src={sliderImages[current]}
               alt={`Game ${current + 1}`}
-              width={300}
-              height={340}
-              className="rounded-2xl object-cover w-full h-full"
-              style={{ maxHeight: 320, maxWidth: 320 }}
+              width={497}
+              height={576}
+              className="rounded-3xl object-cover w-full h-full border-4 border-blue-400 shadow-lg"
+              style={{ maxHeight: 576, maxWidth: 497 }}
             />
-          </div>
+            </div>
           {/* Right Card */}
           <div className="flex-1 flex items-center justify-center transition-all duration-500 scale-90 opacity-60">
             <Image
               src={sliderImages[getIndex(current + 1)]}
               alt="Next Game"
-              width={300}
-              height={340}
+              width={497}
+              height={576}
               className="rounded-2xl object-cover w-full h-full"
-              style={{ maxHeight: 320, maxWidth: 320 }}
+              style={{ maxHeight: 576, maxWidth: 497 }}
             />
           </div>
         </div>
@@ -87,15 +86,15 @@ function GameSlider() {
           </svg>
         </button>
         <div className="flex gap-2">
-          {sliderImages.map((_, idx) => (
-            <span
-              key={idx}
+        {sliderImages.map((_, idx) => (
+          <span
+            key={idx}
               className={`w-2 h-2 rounded-full ${idx === current ? "bg-white" : "bg-white/40"
                 }`}
-              onClick={() => setCurrent(idx)}
-              style={{ cursor: "pointer" }}
-            ></span>
-          ))}
+            onClick={() => setCurrent(idx)}
+            style={{ cursor: "pointer" }}
+          ></span>
+        ))}
         </div>
         <button
           className="w-8 h-8 flex items-center justify-center text-white/40 hover:text-white transition"
@@ -264,7 +263,7 @@ export default function Home() {
                   <Image
                     src="/logoGH.svg"
                     alt="GH Logo"
-                    width={1662}
+                    width={812}
                     height={540}
                     className="object-contain"
                   />
@@ -480,13 +479,66 @@ export default function Home() {
             Game server rentals have become increasingly popular due to the need for specialized servers to host video games and deliver an optimal gaming experience. Let's look at some of the most popular games where you can rent servers.
           </p>
         </section>
-        <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-no-repeat relative py-12">
-          <Image
-            src="/gameallpic.svg"
-            alt="Popular Games"
-            width={1687}
-            height={1710}
-            className="w-full max-w-[1637px] object-cover "/>
+     <section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-cover bg-no-repeat py-24 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-[98vw] max-w-[1700px]">
+            {/* Minecraft */}
+            <div className="mt-12">
+              <h3 className="text-white font-astrospace text-2xl mb-4 px-9 tracking-wide">MINECRAFT</h3>
+              <p className="text-gray-500 text-lg mb-8 mt-[42px] w-[776px] h-[256px] px-9">
+                Enter Minecraft, a limitless world of blocks and endless possibilities. A universe where you create, architect, explore and survive. Minecraft offers you a robust, dynamic sandbox. Survival awaits: you expect resources and fight adversity to stay strong and creative, while others collaborate, construct cities, or compete on custom servers. Whether you want to build magnificent cities, create your own adventure or survive the tension they began in Minecraft, you decide your own adventure. Start today and discover why Minecraft has captured the hearts of millions.
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <div className="relative rounded-[36px] flex items-center justify-center">
+                {/* Card Content */}
+                <div className="relative rounded-[32px] overflow-hidden">
+                  <img
+                    src="/minecraft.png"
+                    alt="Minecraft"
+                    className="w-[779px] h-[505px] object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* ARK */}
+            <div className="flex justify-start">
+              <div className="relative rounded-[36px] flex items-center justify-center">
+                {/* Card Content */}
+                <div className="relative rounded-[32px] overflow-hidden">
+                  <img
+                    src="/ark.svg"
+                    alt="ARK"
+                    className="w-[781px] h-[505px] object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-12">
+              <h3 className="text-white font-astrospace text-2xl mb-4 px-9 tracking-wide">ARK</h3>
+               <p className="text-gray-500 text-lg mb-8 mt-[42px] w-[776px] h-[256px] px-9">
+                In ARK: Survival Evolved, you wake up on an island full of dinosaurs and other prehistoric creatures. You must build, develop, domesticate and survive to prevail. Create your own rules, tame the wildest beings and form complete tribes to dominate the island. With hundreds of mods, the game lets you live an unrivaled prehistoric experience and cater to an unmatched gaming challenge. Are you ready to face the challenge of survival in this prehistoric order? Join the ark today!
+              </p>
+            </div>
+            {/* RUST */}
+            <div className="mt-12">
+              <h3 className="text-white font-astrospace text-2xl mb-4 px-9 tracking-wide">RUST</h3>
+               <p className="text-gray-500 text-lg mb-8 mt-[42px] w-[776px] h-[256px] px-9">
+                Rust throws you into a post-apocalyptic world where only the strongest survive. With nothing more than a stone and a torch, you must develop creative solutions, build shelters, form alliances and defend yourself from dangers. Collect resources, craft weapons, and build your own base. Survival comes down to skill: form alliances or face other players in your journey to the challenge? Try today and see if you can survive rust.
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <div className="relative rounded-[36px] flex items-center justify-center">
+                {/* Card Content */}
+                <div className="relative rounded-[32px] overflow-hidden">
+                  <img
+                    src="/rust.svg"
+                    alt="Rust"
+                    className="w-[779px] h-[505px] object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </section>
       <section className="w-full py-24 px-4 relative overflow-hidden bg-[url('/featurebg.png')] bg-cover bg-no-repeat">
