@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import { url } from "inspector";
 
 const sliderData = [
 	{
@@ -272,45 +273,60 @@ export default function Home() {
 							interruptions.
 						</p>
 
-						<div className="flex flex-row justify-center bg-[url('/logoGH.svg')] bg-no-repeat bg-center items-center w-[1662px] h-[540px] relative">
-							<div className="flex flex-col gap-6 flex-1 w-[804px] h-[490px]">
-								<div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Full FTP access
+						<div className="w-full flex justify-between items-center">
+							<div className=" w-1/3 flex flex-col gap-6 	">
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-[#395BEF]/60 to-transparent">
+									<div className=" bg-linear-to-r from-[#071733] to-transparent rounded-xl px-12 py-7 flex items-center text-white text-2xl font-medium ">
+										Full FTP access
+									</div>
 								</div>
-								<div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Manage database information
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-[#395BEF]/60 to-transparent">
+									<div className=" bg-linear-to-r from-[#071733] to-transparent rounded-xl px-12 py-7 flex items-center text-white text-2xl font-medium ">
+										Manage database information
+									</div>
 								</div>
-								<div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Manage users on your server
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-[#395BEF]/60 to-transparent">
+									<div className=" bg-linear-to-r from-[#071733] to-transparent rounded-xl px-12 py-7 flex items-center text-white text-2xl font-medium ">
+										Manage user on your server 
+									</div>
 								</div>
-								<div className="bg-[#101B2B]/80 border border-blue-700 rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Monitor performance statistics
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-[#395BEF]/60 to-transparent">
+									<div className=" bg-linear-to-r from-[#071733] to-transparent rounded-xl px-12 py-7 flex items-center text-white text-2xl font-medium ">
+										Monitor performance statistics
+									</div>
 								</div>
 							</div>
 
-							<div className="flex flex-col items-center justify-center flex-shrink-0 z-10">
-								<div className="p-6 flex items-center justify-center mt-6">
-									{/* <Image
-                    src="/logoGH.svg"
-                    alt="GH Logo"
-                    width={812}
-                    height={540}
-                    className="object-contain z-10"
-                  /> */}
+							<div className=" w-1/3 flex flex-col items-center justify-center z-10 mx-[-60px]">
+							 	<div className="w-[712px]">
+									<Image
+                					    src="/logoGH.svg"
+                					    alt="GH Logo"
+                					    width={812}
+                					    height={540}
+                					  />
 								</div>
 							</div>
-							<div className="flex flex-col gap-6 flex-1 w-[804px] h-[490px]">
-								<div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Perform backups
+							<div className="w-1/3 flex flex-col gap-6">
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-transparent to-[#395BEF]/60 ">
+									<div className=" bg-linear-to-r from-transparent to-[#071733] rounded-xl px-12 py-7 flex justify-end items-center text-white text-2xl font-medium ">
+										Perform backups
+									</div>
 								</div>
-								<div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Technical support
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-transparent to-[#395BEF]/60">
+									<div className=" bg-linear-to-r from-transparent to-[#071733] rounded-xl px-12 py-7 flex justify-end items-center text-white text-2xl font-medium ">
+										Technical supports
+									</div>
 								</div>
-								<div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-transparent to-[#395BEF]/60">
+									<div className=" bg-linear-to-r from-transparent to-[#071733] rounded-xl px-12 py-7 flex justify-end items-center text-white text-2xl font-medium ">
 									Free subdomain
+									</div>
 								</div>
-								<div className="bg-[#101B2B]/80 border border-[#395BEF] rounded-xl px-8 py-4 flex w-[801px] h-[99px] items-center text-white text-lg font-medium shadow-lg">
-									Automatic backups
+								<div className="p-[2px] rounded-xl bg-gradient-to-r from-transparent to-[#395BEF]/60">
+									<div className=" bg-linear-to-r from-transparent to-[#071733] rounded-xl px-12 py-7 flex justify-end items-center text-white text-2xl font-medium ">
+										Automatic backups
+									</div>
 								</div>
 							</div>
 						</div>
@@ -320,16 +336,16 @@ export default function Home() {
 						</p>
 						<section className="w-full flex justify-center items-center py-16 bg-transparent">
 							<div className="flex flex-col items-center w-full">
-								<div className="flex flex-col md:flex-row gap-8 w-full h-[552px] justify-center">
+								<div className=" flex flex-col md:flex-row gap-8 w-full  justify-center">
 									{/* Left Box */}
 									<div
-										className="flex-1 bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-500 rounded-[32px] p-8 shadow-lg h-[552]px"
-										style={{ boxShadow: "0 0 40px 0 #1a237e33" }}
-									>
-										<h3 className="text-white font-astrospace text-2xl font-bold mb-6">
+										className=" bg-gradient-to-b from-[#385BEE] via-[#B537F2] to-[#15172B] rounded-4xl p-0.5 shadow-lg"
+									   >
+										<div className=" relative h-full bg-[#100E19]/80 p-12 rounded-4xl">
+										<h3 className="relative text-white font-astrospace text-3xl p-5 font-bold mb-6">
 											GAMING EXPERIENCE
 										</h3>
-										<ul className="flex flex-col gap-4">
+										<ul className="relative flex flex-col gap-6 p-5">
 											<li className="flex items-start gap-3 text-white/90 text-base">
 												<span className="mt-1 text-blue-400">
 													<svg
@@ -338,10 +354,10 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
@@ -350,7 +366,7 @@ export default function Home() {
 												</span>
 												<a
 													href="#"
-													className="underline text-blue-200 hover:text-blue-400 transition"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
 													NVMe SSD storage
 												</a>
@@ -363,10 +379,10 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
@@ -375,7 +391,7 @@ export default function Home() {
 												</span>
 												<a
 													href="#"
-													className="underline text-blue-200 hover:text-blue-400 transition"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
 													500% CPU utilization (AMD Ryzen 7 processor or higher)
 												</a>
@@ -388,10 +404,10 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
@@ -400,7 +416,7 @@ export default function Home() {
 												</span>
 												<a
 													href="#"
-													className="underline text-blue-200 hover:text-blue-400 transition"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
 													3 manual backups from the user panel
 												</a>
@@ -413,10 +429,10 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
@@ -425,22 +441,23 @@ export default function Home() {
 												</span>
 												<a
 													href="#"
-													className="underline text-blue-200 hover:text-blue-400 transition"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
 													Protection against DDoS attacks
 												</a>
 											</li>
 										</ul>
+										</div>
 									</div>
 									{/* Right Box */}
 									<div
 										className="flex-1 bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-500 rounded-[32px] p-8 shadow-lg"
 										style={{ boxShadow: "0 0 40px 0 #1a237e33" }}
-									>
-										<h3 className="text-white font-astrospace text-2xl font-bold mb-6">
+									  >
+										<h3 className="text-white font-astrospace text-3xl p-5 font-bold mb-6">
 											PLUS DE LA MARCA
 										</h3>
-										<ul className="flex flex-col gap-4">
+										<ul className="flex flex-col gap-6 p-5">
 											<li className="flex items-start gap-3 text-white/90 text-base">
 												<span className="mt-1 text-blue-400">
 													<svg
@@ -449,17 +466,22 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
 														/>
 													</svg>
 												</span>
+												<a
+													href="#"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
+												>
 												Delivery of your server in minutes
+												</a>
 											</li>
 											<li className="flex items-start gap-3 text-white/90 text-base">
 												<span className="mt-1 text-blue-400">
@@ -469,17 +491,22 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
 														/>
 													</svg>
 												</span>
+												<a
+													href="#"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
+												>
 												High internet connection
+												</a>
 											</li>
 											<li className="flex items-start gap-3 text-white/90 text-base">
 												<span className="mt-1 text-blue-400">
@@ -489,17 +516,22 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
 														/>
 													</svg>
 												</span>
+												<a
+													href="#"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
+												>
 												Free extra backups for 7 days
+												</a>
 											</li>
 											<li className="flex items-start gap-3 text-white/90 text-base">
 												<span className="mt-1 text-blue-400">
@@ -509,17 +541,22 @@ export default function Home() {
 														fill="none"
 														viewBox="0 0 20 20"
 													>
-														<circle cx="10" cy="10" r="10" fill="#3B82F6" />
+														<circle cx="10" cy="10" r="10" fill="#ffffff" />
 														<path
 															d="M7.5 10.5l2 2 3-4"
-															stroke="#fff"
+															stroke="#101B2B"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
 														/>
 													</svg>
 												</span>
+												<a
+													href="#"
+													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
+												>
 												Unlimited players
+												</a>
 											</li>
 										</ul>
 									</div>
@@ -543,17 +580,17 @@ export default function Home() {
 					<span className="text-white">LEADING GAME SERVER RENTAL</span>
 				</h2>
 				{/* Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-16 w-[1637px] px-12">
+				<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-16 w-[1637px]">
 					{/* Card 1 */}
-					<div className="relative shadow-lg flex items-center flex-col">
+					<div className="relative shadow-lg flex items-center flex-col ">
 						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white px-1.5 font-bold text-base">
+							<span className="uppercase text-white px-1.5 text-xl font-bold">
 								User-friendly web interface
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -564,7 +601,7 @@ export default function Home() {
 								/>
 							</span>
 										
-							<p className="text-blue-100 text-sm">
+							<p className="text-[#9BA8CD] text-xl mt-2">
 								GameProHost simplifies everything with intuitive processes,
 								allowing users to enjoy benefits without prior knowledge, making
 								the platform an easy-to-use solution.
@@ -572,181 +609,136 @@ export default function Home() {
 						</div>
 					</div>
 					{/* Card 2 */}
-					<div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
-						<span className="text-blue-400 mb-4">
-							{/* Chip Icon */}
-							<svg
-								width="40"
-								height="40"
-								fill="none"
-								viewBox="0 0 40 40"
-							>
-								<rect
-									x="12"
-									y="12"
-									width="16"
-									height="16"
-									rx="4"
-									stroke="#3B82F6"
-									strokeWidth="2"
-								/>
-								<rect
-									x="18"
-									y="18"
-									width="4"
-									height="4"
-									rx="2"
-									fill="#3B82F6"
-								/>
-							</svg>
-						</span>
-						<div className="flex items-center gap-2 mb-2">
+					<div className="relative shadow-lg flex items-center flex-col">
+						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white font-bold text-base">
+							<span className="uppercase text-white font-bold text-xl">
 								No lag
 							</span>
-							<span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<p className="text-blue-100 text-sm mt-2">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+							<span className="text-blue-400 mb-4">
+								{/* Keyboard Icon */}
+								<Image
+									src="/card2icon.svg"
+									alt="Keyboard Icon"
+									width={75}
+									height={74}
+								/>
+							</span>
+										
+							<p className="text-[#9BA8CD] text-xl mt-2">
 							Leave behind micro-freezing while you play. We have high-end
 							equipment that has the ability to deliver optimal performance even
 							under high demand conditions.
 						</p>
+						</div>
 					</div>
 					{/* Card 3 */}
-					<div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
-						<span className="text-blue-400 mb-4">
-							{/* Server Icon */}
-							<svg
-								width="40"
-								height="40"
-								fill="none"
-								viewBox="0 0 40 40"
-							>
-								<rect
-									x="10"
-									y="16"
-									width="20"
-									height="8"
-									rx="2"
-									stroke="#3B82F6"
-									strokeWidth="2"
-								/>
-								<rect
-									x="14"
-									y="20"
-									width="4"
-									height="2"
-									rx="1"
-									fill="#3B82F6"
-								/>
-							</svg>
-						</span>
-						<div className="flex items-center gap-2 mb-2">
+					<div className="relative shadow-lg flex items-center flex-col">
+						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white font-bold text-base">
+							<span className="uppercase text-white font-bold text-xl">
 								Hardware NVME y AMD
 							</span>
-							<span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<p className="text-blue-100 text-sm mt-2">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+							<span className="text-blue-400 mb-4">
+								{/* Keyboard Icon */}
+								<Image
+									src="/card3icon.svg"
+									alt="Keyboard Icon"
+									width={80}
+									height={51}
+								/>
+							</span>										
+							<p className="text-[#9BA8CD] text-xl mt-2">
 							Our gaming servers feature the latest CPU technology and NVME SSD
 							storage, allowing lightning-fast processing and easy management via
 							our control panel.
-						</p>
+							</p>
+						</div>
 					</div>
 					{/* Card 4 */}
-					<div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
-						<span className="text-blue-400 mb-4">
-							{/* Headset Icon */}
-							<svg
-								width="40"
-								height="40"
-								fill="none"
-								viewBox="0 0 40 40"
-							>
-								<circle cx="20" cy="20" r="12" stroke="#3B82F6" strokeWidth="2" />
-								<path d="M12 28v-2a4 4 0 014-4h8a4 4 0 014 4v2" stroke="#3B82F6" strokeWidth="2" />
-							</svg>
-						</span>
-						<div className="flex items-center gap-2 mb-2">
+					<div className="relative shadow-lg flex items-center flex-col">
+						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white font-bold text-base">
+							<span className="uppercase text-white font-bold text-xl">
 								24/7 support
 							</span>
-							<span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<p className="text-blue-100 text-sm mt-2">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+							<span className="text-blue-400 mb-4">
+								{/* Keyboard Icon */}
+								<Image
+									src="/card4icon.svg"
+									alt="Keyboard Icon"
+									width={73}
+									height={69}
+								/>
+							</span>
+										
+							<p className="text-[#9BA8CD] text-xl mt-2">
 							We have a team of trained specialists who are available to answer
 							all your questions and help you with your server.
 						</p>
+						</div>
 					</div>
 					{/* Card 5 */}
-					<div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
-						<span className="text-blue-400 mb-4">
-							{/* Cog Icon */}
-							<svg
-								width="40"
-								height="40"
-								fill="none"
-								viewBox="0 0 40 40"
-							>
-								<circle cx="20" cy="20" r="8" stroke="#3B82F6" strokeWidth="2" />
-								<path
-									d="M20 12v-2M20 30v-2M28 20h2M10 20h2M25.66 25.66l1.42 1.42M12.92 12.92l1.42 1.42M25.66 14.34l1.42-1.42M12.92 27.08l1.42-1.42"
-									stroke="#3B82F6"
-									strokeWidth="2"
-								/>
-							</svg>
-						</span>
-						<div className="flex items-center gap-2 mb-2">
+					<div className="relative shadow-lg flex items-center flex-col">
+						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white font-bold text-base">
+							<span className="uppercase text-white font-bold text-xl">
 								Freedom of management
 							</span>
-							<span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<p className="text-blue-100 text-sm mt-2">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+							<span className="text-blue-400 mb-4">
+								{/* Keyboard Icon */}
+								<Image
+									src="/card5icon.svg"
+									alt="Keyboard Icon"
+									width={58}
+									height={66}
+								/>
+							</span>
+										
+							<p className="text-[#9BA8CD] text-xl mt-2">
 							A hosting for game servers without restrictions. You will be able
 							to access all files from the panel or from FTP to edit, delete or
 							upload files.
 						</p>
+						</div>
 					</div>
 					{/* Card 6 */}
-					<div className="relative bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-200/30 rounded-2xl p-8 shadow-lg flex flex-col min-h-[260px]">
-						<span className="text-blue-400 mb-4">
-							{/* Shield Icon */}
-							<svg
-								width="40"
-								height="40"
-								fill="none"
-								viewBox="0 0 40 40"
-							>
-								<path
-									d="M20 8l10 4v6c0 7.732-5.373 14.042-10 16-4.627-1.958-10-8.268-10-16v-6l10-4z"
-									stroke="#3B82F6"
-									strokeWidth="2"
-								/>
-								<path
-									d="M16 20l3 3 5-5"
-									stroke="#3B82F6"
-									strokeWidth="2"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-							</svg>
-						</span>
-						<div className="flex items-center gap-2 mb-2">
+					<div className="relative shadow-lg flex items-center flex-col">
+						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white font-bold text-base">
+							<span className="uppercase text-white font-bold text-xl">
 								Backups of your server
 							</span>
-							<span className="flex-1 h-px bg-blue-200/30 mx-2"></span>
+							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<p className="text-blue-100 text-sm mt-2">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+							<span className="text-blue-400 mb-4">
+								{/* Keyboard Icon */}
+								<Image
+									src="/card6icon.svg"
+									alt="Keyboard Icon"
+									width={58}
+									height={68}
+								/>
+							</span>
+										
+							<p className="text-[#9BA8CD] text-xl mt-2">
 							Go back to your previous games with a click. Each server has a
 							backup of all games for a period of 7 days.
 						</p>
+						</div>
 					</div>
 				</div>
 
@@ -759,23 +751,25 @@ export default function Home() {
 					<button className="mt-6 mb-12 px-10 py-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold text-lg shadow-lg hover:from-blue-700 hover:to-blue-500 transition">
 						START YOUR SERVER RIGHT NOW
 					</button>
-					<div className="w-full max-w-3xl mx-auto border border-blue-200/40 rounded-2xl bg-gradient-to-br from-[#101B2B]/70 to-[#23234A]/70 px-8 py-8 mb-20">
-						<div className="flex items-center justify-center mb-4">
+					<div className="relative shadow-lg flex items-center flex-col mt-12">
+						<div className="flex items-center justify-center mb-4 bg-[#18152c] z-10">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
-							<span className="uppercase text-white font-bold text-base mx-4 tracking-wide">
+							<span className="uppercase text-white font-bold text-2xl mx-4 ">
 								DDOS PROTECTION AS STANDARD
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<p className="text-blue-100 text-center text-base mb-2">
+					 <div className="w-[1181px] h-[187px] mx-auto border border-blue-200/40 rounded-2xl px-8 py-8 mb-20 mt-[-32px]">
+						<p className="text-[#9BA8CD] text-center text-base mb-2">
 							DDoS attacks are more common than you think, especially in the
 							most competitive games.
 						</p>
-						<p className="text-blue-100 text-center text-base">
+						<p className="text-[#9BA8CD] text-center mt-8 text-base">
 							We guarantee the protection of our servers in order to keep you
 							online 24 hours a day, 7 days a week without downtime thanks to
 							our Firewall against massive traffic.
 						</p>
+					</div>
 					</div>
 					<h2 className="text-white text-3xl md:text-4xl font-astrospace font-extrabold text-center mb-4 tracking-wide uppercase">
 						POPULAR GAMES TO{" "}
@@ -791,21 +785,15 @@ export default function Home() {
 				<section className="w-full flex flex-col items-center bg-[url('/hero5.png')] bg-cover bg-no-repeat py-24 relative">
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-[98vw] max-w-[1700px]">
 						{/* Minecraft */}
-						<div className="mt-12">
-							<h3 className="text-white font-astrospace text-2xl mb-4 px-9 tracking-wide">
+						<div className="justify-center flex flex-col gap-9 ">
+							<div>
+							<h3 className="text-white font-astrospace text-4xl mb-4 tracking-wide">
 								MINECRAFT
 							</h3>
-							<p className="text-gray-500 text-lg mb-8 mt-[42px] w-[776px] h-[256px] px-9">
-								Enter Minecraft, a limitless world of blocks and endless
-								possibilities. A universe where you create, architect, explore
-								and survive. Minecraft offers you a robust, dynamic sandbox.
-								Survival awaits: you expect resources and fight adversity to
-								stay strong and creative, while others collaborate, construct
-								cities, or compete on custom servers. Whether you want to build
-								magnificent cities, create your own adventure or survive the
-								tension they began in Minecraft, you decide your own adventure.
-								Start today and discover why Minecraft has captured the hearts
-								of millions.
+							<div className="w-[120px] h-1 bg-[#3885F2] rounded-full" />
+							</div>
+							<p className="text-[#8296CF] text-lg">
+								Enter Minecraft, a limitless world of blocks and endless possibilities. A universe where you are the architect, explorer and hero. Minecraft offers you two different game modes: Survival, where you collect resources and fight creatures to stay alive, and Creative, where you have complete freedom to build anything your imagination can conceive. Minecraft also offers multiplayer, allowing you to explore and build with friends. Whether you want to build a majestic castle, explore vast biomes, or take on the fearsome Ender Dragon, in Minecraft, you decide your own adventure! Enter today and discover why Minecraft has captured the hearts of millions.
 							</p>
 						</div>
 						<div className="flex justify-end">
@@ -833,11 +821,14 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="mt-12">
-							<h3 className="text-white font-astrospace text-2xl mb-4 px-9 tracking-wide">
+						<div className="justify-center flex flex-col gap-9">
+						 <div>
+							<h3 className="text-white font-astrospace text-4xl mb-4 tracking-wide">
 								ARK
 							</h3>
-							<p className="text-gray-500 text-lg mb-8 mt-[42px] w-[776px] h-[256px] px-9">
+							<div className="w-[120px] h-1 bg-[#3885F2] rounded-full" />
+							</div>
+							<p className="text-[#8296CF] text-lg">
 								In ARK: Survival Evolved, you wake up on an island full of
 								dinosaurs and other prehistoric creatures. You must build,
 								develop, domesticate and survive to prevail. Create your own
@@ -849,6 +840,17 @@ export default function Home() {
 								and build your own base. Survival comes down to skill: form
 								alliances or face other players in your journey to the challenge?
 								Try today and see if you can survive rust.
+							</p>
+						</div>
+						<div className="justify-center flex flex-col gap-9">
+							<div>
+							<h3 className="text-white font-astrospace text-4xl mb-4 tracking-wide">
+								Rust
+							</h3>
+						     <div className="w-[120px] h-1 bg-[#3885F2] rounded-full" />
+							</div>
+							<p className="text-[#8296CF] text-lg">
+								Rust throws you into a post-apocalyptic world where only the strongest survive. With nothing more than a stone and a torch, your mission is to survive: collect resources, build shelters and defend your territory against other players. The game also offers an intense multiplayer experience, allowing you to form alliances or face other players. In Rust, every decision counts and every interaction can be crucial to your survival. Are you ready for the challenge? Try it today and see if you can survive Rust!
 							</p>
 						</div>
 						<div className="flex justify-end">
@@ -1073,12 +1075,13 @@ export default function Home() {
 					servers.
 				</p>
 				<div className="flex flex-col items-center w-full">
-					<div className="relative w-full max-w-3xl mb-8 flex justify-center">
-						<img
-							src="/map.svg"
-							alt="World Map"
-							className="w-full max-w-[95vw] h-auto"
-						/>
+					<div className="relative w-full mb-8 flex justify-center">
+						<Image
+								src="/map.svg"
+								alt="Map"
+								width={1340}
+								height={710}
+							/>
 						<span className="absolute left-[18%] top-[38%] w-4 h-4 sm:w-6 sm:h-6 bg-blue-400/80 rounded-full blur-[4px]"></span>
 						<span className="absolute left-[38%] top-[32%] w-4 h-4 sm:w-6 sm:h-6 bg-blue-400/80 rounded-full blur-[4px]"></span>
 						<span className="absolute left-[62%] top-[28%] w-4 h-4 sm:w-6 sm:h-6 bg-blue-400/80 rounded-full blur-[4px]"></span>
