@@ -12,12 +12,12 @@ import { url } from "inspector";
 
 const sliderData = [
 	{
-		img: "/g1.svg",
+		img: "/games1.jpg",
 		title: "ARK SERVER HOSTING",
 		price: "$10",
 	},
 	{
-		img: "/g2.svg",
+		img: "/games.webp",
 		title: "MINECRAFT SERVER HOSTING",
 		price: "$10",
 	},
@@ -27,7 +27,7 @@ const sliderData = [
 		price: "$10",
 	},
 	{
-		img: "/g4.svg",
+		img: "/g2.avif",
 		title: "VALHEIM SERVER HOSTING",
 		price: "$10",
 	},
@@ -61,10 +61,8 @@ function GameSlider() {
 					modules={[Navigation, Pagination]}
 					navigation
 					pagination={{ clickable: true }}
-					spaceBetween={30}
+					spaceBetween={56}
 					slidesPerView="auto"
-					// slidesOffsetBefore={200} // left spacing
-					// slidesOffsetAfter={200}  // right spacing
 					centeredSlides
 					loop
 					className="w-full px-4 mt-16"
@@ -171,7 +169,7 @@ export default function Home() {
 							</button>
 						</div>
 
-						<h1 className="font-astrospace text-[56px] py-[69.25px] font-extrabold leading-tight text-white">
+						<h1 className="font-astrospace text-[56px] py-[69.25px] leading-24 font-extrabold text-white">
 							THE MOST{" "}
 							<span className="text-blue-400">BEASTLY</span>
 							<br />
@@ -183,7 +181,7 @@ export default function Home() {
 							Create your server for the game of your choice in less than 1
 							minute.
 						</p>
-						<p className="text-base text-white/90 mt-3 mb-8 max-w-xl">
+						<p className="text-base text-[#A3B5E8] leading-8 mt-3 mb-8">
 							More than just a Gaming Server Rental service, we are the
 							preferred hosting for thousands of gamers! Our servers powered by
 							AMD RYZEN 7 and 9 CPUs with NVME storage are designed for the
@@ -258,7 +256,7 @@ export default function Home() {
 				<GameSlider />
 				<section className="w-full flex justify-center items-center py-24 bg-[url('/Hero3.png')] bg-cover bg-no-repeat">
 					<div className="container flex flex-col items-center relative ">
-						<h2 className="text-white text-4xl bg-transparent font-astrospace  md:text-5xl font-extrabold text-center mb-4 tracking-wide">
+						<h2 className="text-white text-4xl bg-transparent font-astrospace leading-20  md:text-5xl font-extrabold text-center mb-4 tracking-wide">
 							WE KNOW YOU ARE LOOKING FOR{" "}
 							<span className="text-blue-400">MAXIMUM</span>
 							<br />
@@ -339,9 +337,9 @@ export default function Home() {
 								<div className=" flex flex-col md:flex-row gap-8 w-full  justify-center">
 									{/* Left Box */}
 									<div
-										className=" bg-gradient-to-b from-[#385BEE] via-[#B537F2] to-[#15172B] rounded-4xl p-0.5 shadow-lg"
+										className=" bg-gradient-to-b from-[#385BEE] via-[#B537F2] to-[#15172B] rounded-4xl p-0.5"
 									   >
-										<div className=" relative h-full bg-[#100E19]/80 p-12 rounded-4xl">
+										<div className=" relative bg-[#15172B] bg-[url('/glow.svg')] bg-cover bg-no-repeat h-[552px] w-[802px] p-12 rounded-4xl">
 										<h3 className="relative text-white font-astrospace text-3xl p-5 font-bold mb-6">
 											GAMING EXPERIENCE
 										</h3>
@@ -451,13 +449,13 @@ export default function Home() {
 									</div>
 									{/* Right Box */}
 									<div
-										className="flex-1 bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-500 rounded-[32px] p-8 shadow-lg"
-										style={{ boxShadow: "0 0 40px 0 #1a237e33" }}
-									  >
-										<h3 className="text-white font-astrospace text-3xl p-5 font-bold mb-6">
+										className=" bg-gradient-to-b from-[#385BEE] via-[#B537F2] to-[#15172B] rounded-4xl p-0.5"
+									   >
+										<div className=" relative bg-[#15172B] bg-[url('/glow.svg')] bg-cover bg-no-repeat h-[552px] w-[802px] p-12 rounded-4xl">
+										<h3 className="relative text-white font-astrospace text-3xl p-5 font-bold mb-6">
 											PLUS DE LA MARCA
 										</h3>
-										<ul className="flex flex-col gap-6 p-5">
+										<ul className="relative flex flex-col gap-6 p-5">
 											<li className="flex items-start gap-3 text-white/90 text-base">
 												<span className="mt-1 text-blue-400">
 													<svg
@@ -480,7 +478,7 @@ export default function Home() {
 													href="#"
 													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
-												Delivery of your server in minutes
+													Delivery of your server in minutes
 												</a>
 											</li>
 											<li className="flex items-start gap-3 text-white/90 text-base">
@@ -505,7 +503,7 @@ export default function Home() {
 													href="#"
 													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
-												High internet connection
+													High internet connection
 												</a>
 											</li>
 											<li className="flex items-start gap-3 text-white/90 text-base">
@@ -530,7 +528,7 @@ export default function Home() {
 													href="#"
 													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
-												Free extra backups for 7 days
+													Free extra backups for 7 days
 												</a>
 											</li>
 											<li className="flex items-start gap-3 text-white/90 text-base">
@@ -555,10 +553,11 @@ export default function Home() {
 													href="#"
 													className=" text-blue-200 hover:text-blue-400 text-2xl transition"
 												>
-												Unlimited players
+													Unlimited players
 												</a>
 											</li>
 										</ul>
+										</div>
 									</div>
 								</div>
 								{/* Bottom Line */}
@@ -574,7 +573,7 @@ export default function Home() {
 			</div>
 			<section className=" flex flex-col items-center min-h-screen bg-[url('/hero4.png')] bg-cover bg-no-repeat relative">
 				{/* Heading */}
-				<h2 className="text-white text-4xl md:text-5xl font-astrospace font-extrabold text-center mb-2 tracking-wide">
+				<h2 className="text-white text-4xl md:text-5xl leading-20 font-astrospace font-extrabold text-center mb-2 tracking-wide">
 					WHY <span className="text-blue-400">GAMEPROHOST?</span>
 					<br />
 					<span className="text-white">LEADING GAME SERVER RENTAL</span>
@@ -590,7 +589,7 @@ export default function Home() {
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369] shadow-lg flex flex-col p-12 gap-6 mt-[-23px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -617,7 +616,7 @@ export default function Home() {
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-23px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -644,7 +643,7 @@ export default function Home() {
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-23px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -670,7 +669,7 @@ export default function Home() {
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-23px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -696,7 +695,7 @@ export default function Home() {
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-23px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -716,14 +715,14 @@ export default function Home() {
 					</div>
 					{/* Card 6 */}
 					<div className="relative shadow-lg flex items-center flex-col">
-						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100E19]">
+						<div className="w-fit gap-2 mb-2 flex justify-center z-1 items-center bg-[#100a37]">
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 							<span className="uppercase text-white font-bold text-xl">
 								Backups of your server
 							</span>
 							<span className="w-2 h-2 bg-blue-200 rounded-full"></span>
 						</div>
-						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-20px]">
+						<div className="relative border border-blue-200/30 rounded-2xl w-[527px] h-[369px] shadow-lg flex flex-col p-12 gap-6 mt-[-23px]">
 							<span className="text-blue-400 mb-4">
 								{/* Keyboard Icon */}
 								<Image
@@ -743,7 +742,7 @@ export default function Home() {
 				</div>
 
 				<section className="w-full flex flex-col items-center py-24">
-					<h2 className="text-white text-3xl md:text-4xl lg:text-4xl font-astrospace font-extrabold text-center mb-6 tracking-wide uppercase">
+					<h2 className="text-white text-3xl md:text-4xl leading-20 lg:text-4xl font-astrospace font-extrabold text-center mb-6 tracking-wide uppercase">
 						YOU ARE JUST ONE CLICK AWAY FROM HAVING YOUR OWN GAME SERVER,
 						<br />
 						NOTHING WILL SLOW DOWN YOUR GAMES.
@@ -775,7 +774,7 @@ export default function Home() {
 						POPULAR GAMES TO{" "}
 						<span className="text-blue-400">RENT SERVERS</span>
 					</h2>
-					<p className="text-blue-100 text-lg text-center max-w-2xl mb-2">
+					<p className="text-blue-100 text-lg leading-10 text-center max-w-2xl mb-2">
 						Game server rentals have become increasingly popular due to the need
 						for specialized servers to host video games and deliver an optimal
 						gaming experience. Let's look at some of the most popular games
@@ -792,7 +791,7 @@ export default function Home() {
 							</h3>
 							<div className="w-[120px] h-1 bg-[#3885F2] rounded-full" />
 							</div>
-							<p className="text-[#8296CF] text-lg">
+							<p className="text-[#8296CF] leading-8 text-lg">
 								Enter Minecraft, a limitless world of blocks and endless possibilities. A universe where you are the architect, explorer and hero. Minecraft offers you two different game modes: Survival, where you collect resources and fight creatures to stay alive, and Creative, where you have complete freedom to build anything your imagination can conceive. Minecraft also offers multiplayer, allowing you to explore and build with friends. Whether you want to build a majestic castle, explore vast biomes, or take on the fearsome Ender Dragon, in Minecraft, you decide your own adventure! Enter today and discover why Minecraft has captured the hearts of millions.
 							</p>
 						</div>
@@ -828,7 +827,7 @@ export default function Home() {
 							</h3>
 							<div className="w-[120px] h-1 bg-[#3885F2] rounded-full" />
 							</div>
-							<p className="text-[#8296CF] text-lg">
+							<p className="text-[#8296CF] leading-8 text-lg">
 								In ARK: Survival Evolved, you wake up on an island full of
 								dinosaurs and other prehistoric creatures. You must build,
 								develop, domesticate and survive to prevail. Create your own
@@ -849,7 +848,7 @@ export default function Home() {
 							</h3>
 						     <div className="w-[120px] h-1 bg-[#3885F2] rounded-full" />
 							</div>
-							<p className="text-[#8296CF] text-lg">
+							<p className="text-[#8296CF] leading-8 text-lg">
 								Rust throws you into a post-apocalyptic world where only the strongest survive. With nothing more than a stone and a torch, your mission is to survive: collect resources, build shelters and defend your territory against other players. The game also offers an intense multiplayer experience, allowing you to form alliances or face other players. In Rust, every decision counts and every interaction can be crucial to your survival. Are you ready for the challenge? Try it today and see if you can survive Rust!
 							</p>
 						</div>
@@ -1002,7 +1001,7 @@ export default function Home() {
 				</div>
 
 				<div className="w-[1657px] h-[497px] mx-auto mt-24 bg-[url('/mask.svg')] flex flex-col items-center justify-center relative">
-					<h4 className="text-white text-center text-3xl md:text-4xl font-bold font-astrospace mb-10 tracking-wide uppercase max-w-4xl mx-auto">
+					<h4 className="text-white text-center text-4xl w-[1412px] leading-20 font-astrospace mb-10 tracking-wide uppercase">
 						GAMEPROHOST, IS DESIGNED TO EMPOWER COMPANIES AND OFFER THE BEST
 						EXPERIENCE AND QUALITY IN GAME SERVERS.
 					</h4>

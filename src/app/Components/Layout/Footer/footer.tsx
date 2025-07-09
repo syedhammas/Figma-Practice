@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaBehance, FaDribbble } from 'reac
 
 const Footer = () => {
   return (
-    <footer className="bg-[url('/footerbg.png')] w-[1834px] h-[820px] bg-no-repeat mx-auto text-white pt-40 font-poppins relative flex flex-col justify-between">
+    <footer className="bg-[url('/footerbg.png')] w-[1834px] h-[1020px] bg-no-repeat mx-auto text-white pt-40 font-poppins relative flex flex-col justify-between">
       {/* Newsletter */}
       <div className="w-full px-24">
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
@@ -52,7 +52,7 @@ const Footer = () => {
         {/* Columns */}
         <div className="flex-1 min-w-[180px] mt-8">
           <h4 className="text-white font-bold text-xl mb-4 border-b-2 border-[#3A7BFF] inline-block pb-1">GAMES AVAILABLE</h4>
-          <ul className="list-none p-0 m-0 text-[#B0B8C1] text-base md:text-lg leading-9">
+          <ul className="list-none p-0 m-0 text-[#B0B8C1] text-base md:text-lg leading-16">
             <li>MINECRAFT HOSTING</li>
             <li>RUST HOSTING</li>
             <li>ARK HOSTING</li>
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
         <div className="flex-1 min-w-[180px] mt-8">
           <h4 className="text-white font-bold text-xl mb-4 border-b-2 border-[#3A7BFF] inline-block pb-1">CUSTOMER ACCESS</h4>
-          <ul className="list-none p-0 m-0 text-[#B0B8C1] text-base md:text-lg leading-9">
+          <ul className="list-none p-0 m-0 text-[#B0B8C1] text-base md:text-lg leading-16">
             <li>GAME PANEL</li>
             <li>CUSTOMER AREA</li>
             <li>OPEN A TICKET</li>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
         <div className="flex-1 min-w-[180px] mt-8">
           <h4 className="text-white font-bold text-xl mb-4 border-b-2 border-[#3A7BFF] inline-block pb-1">COMPANY</h4>
-          <ul className="list-none p-0 m-0 text-[#B0B8C1] text-base md:text-lg leading-9">
+          <ul className="list-none p-0 m-0 text-[#B0B8C1] text-base md:text-lg leading-16">
             <li>ABOUT US</li>
             <li>HARDWARE</li>
             <li>MEDIUM</li>
