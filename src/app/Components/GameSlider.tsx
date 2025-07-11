@@ -62,25 +62,21 @@ export default function GameSlider() {
                     spaceBetween={50}
                     slidesPerView="auto"
                     centeredSlides={true}
-                    loop={false} // Disable loop
-                    initialSlide={2}
+                    loop={true}
                     className="w-full mt-16"
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+
                 >
-
-
                     {sliderData.map((item, idx) => (
                         <SwiperSlide
                             key={idx}
-                            style={{ width: 500, maxWidth: "100vw" }}
-                            className=""
+                            className="min-w-[320px] max-w-[500px] w-full"
                         >
                             <div
-                                className={`relative flex flex-col items-center justify-end h-[576px] w-[497px] rounded-3xl overflow-hidden shadow-lg border-2 transition-all duration-300
-                            ${activeIndex === idx ? "border-blue-400" : "border-transparent"}
-                          `}
+                                className={`relative flex flex-col items-center justify-end h-[576px] w-full rounded-3xl overflow-hidden shadow-lg border-2
+                  ${activeIndex === idx ? "border-blue-400" : "border-transparent"}
+                `}
                             >
-                                {/* Background Image */}
                                 <Image
                                     src={item.img}
                                     alt={item.title}
@@ -99,7 +95,7 @@ export default function GameSlider() {
                                     />
                                 )}
 
-                                {/* Existing black fade overlay (can keep this if needed) */}
+                                {/* Existing black fade overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-20" />
 
                                 {/* Content */}
@@ -113,18 +109,16 @@ export default function GameSlider() {
                                     </p>
                                     <button
                                         className={`mt-2 px-28 py-3 w-[339px] h-[74px] rounded-full font-bold text-base shadow transition flex items-center gap-2
-                                ${activeIndex === idx
+                      ${activeIndex === idx
                                                 ? "bg-blue-500 text-white"
                                                 : "bg-[#23234A]/80 text-white"}
-                              `}
+                    `}
                                     >
                                         SEE PLANS <span aria-hidden>↗</span>
                                     </button>
                                 </div>
                             </div>
-
                         </SwiperSlide>
-
                     ))}
                 </Swiper>
             </div>
