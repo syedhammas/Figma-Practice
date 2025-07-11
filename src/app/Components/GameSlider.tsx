@@ -38,6 +38,11 @@ const sliderData = [
         title: "GTA V SERVER HOSTING",
         price: "$10",
     },
+    {
+        img: "/games3.webp",
+        title: "ASSASSIN'S CREED SHADOWS SERVER HOSTING",
+        price: "$10",
+    },
 ];
 
 export default function GameSlider() {
@@ -55,7 +60,6 @@ export default function GameSlider() {
             </p>
             <div className="w-full flex justify-center items-center relative ">
                 <Swiper
-
                     modules={[Navigation, Pagination]}
                     navigation
                     pagination={{ clickable: true }}
