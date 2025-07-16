@@ -58,7 +58,7 @@ export default function GameSlider() {
             <p className="text-white/80 text-lg text-center mb-8">
                 Create your own server in one click
             </p>
-            <div className="w-full flex justify-center items-center relative ">
+            <div className="w-full min-w-sm flex justify-center items-center relative ">
                 <Swiper
                     modules={[Navigation, Pagination]}
                     navigation
@@ -67,7 +67,7 @@ export default function GameSlider() {
                     slidesPerView="auto"
                     centeredSlides={true}
                     loop={true}
-                    className="w-full mt-16"
+                    className=" mt-16"
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
 
                 >

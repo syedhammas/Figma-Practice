@@ -132,7 +132,7 @@ export default function GameServers() {
 					</div>
 				</div>
 				{/* Carousel Dots */}
-				<div className="flex justify-center gap-2 mt-6">
+				{/* <div className="flex justify-center gap-2 mt-6">
 					{[...Array(5)].map((_, i) => (
 						<span
 							key={i}
@@ -140,7 +140,7 @@ export default function GameServers() {
 								}`}
 						></span>
 					))}
-				</div>
+				</div> */}
 			</div>
 
 			<div className="w-[1657px] h-[497px] mx-auto mt-24 bg-[url('/mask.svg')] flex flex-col items-center justify-center relative">
