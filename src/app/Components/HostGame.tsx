@@ -45,7 +45,7 @@ export default function HostGame() {
                     </div>
 
                     <div className=" w-1/3 flex flex-col items-center justify-center z-10 mx-[-60px]">
-                        <div className="">
+                        <div className="w-[712px]">
                             <Image
                                 src="/logoGH.svg"
                                 alt="GH Logo"
@@ -88,7 +88,7 @@ export default function HostGame() {
                             <div
                                 className=" bg-gradient-to-b from-[#385BEE] via-[#B537F2] to-[#15172B] rounded-4xl p-0.5"
                             >
-                                <div className=" relative bg-[#15172B] bg-[url('/glow.svg')] bg-cover bg-no-repeat h-[552px] w-full  p-12 rounded-4xl">
+                                <div className=" relative bg-[#15172B] bg-[url('/glow.svg')] bg-cover bg-no-repeat h-[552px] w-[802px] p-12 rounded-4xl">
                                     <h3 className="relative text-white font-astrospace text-3xl p-5 font-bold mb-6">
                                         GAMING EXPERIENCE
                                     </h3>
@@ -200,7 +200,7 @@ export default function HostGame() {
                             <div
                                 className=" bg-gradient-to-b from-[#385BEE] via-[#B537F2] to-[#15172B] rounded-4xl p-0.5"
                             >
-                                <div className=" relative bg-[#15172B] bg-[url('/glow.svg')] bg-cover bg-no-repeat h-[552px] w-full p-12 rounded-4xl">
+                                <div className=" relative bg-[#15172B] bg-[url('/glow.svg')] bg-cover bg-no-repeat h-[552px] w-[802px] p-12 rounded-4xl">
                                     <h3 className="relative text-white font-astrospace text-3xl p-5 font-bold mb-6">
                                         PLUS DE LA MARCA
                                     </h3>

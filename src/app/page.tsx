@@ -36,7 +36,7 @@ export default function Home() {
 								</button>
 							</div>
 
-							<h1 className="font-astrospace text-3xl sm:text-2xl md:text-2xl lg:text-4xl py-8 lg:py-[69.25px] leading-12 text-white">
+							<h1 className="font-astrospace text-3xl sm:text-4xl md:text-5xl lg:text-[56px] py-8 lg:py-[69.25px] leading-tight font-extrabold text-white">
 								THE MOST <span className="text-blue-400">BEASTLY</span>
 								<br className="hidden sm:block" />
 								<span className="text-blue-400">PERFORMANCE</span> FOR
