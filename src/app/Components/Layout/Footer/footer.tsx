@@ -6,7 +6,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaBehance, FaDribbble } from 'reac
 
 const Footer = () => {
   return (
-    <footer className="bg-[url('/footerbg.png')] bg-cover bg-no-repeat w-full text-white pt-20 md:pt-40 font-poppins relative">
+    <footer className="bg-[url('/footerbg.png')] bg-cover bg-no-repeat w-full text-white px-2.5 pt-20 md:pt-40 font-poppins relative">
       <div className="w-full px-4 sm:px-8 md:px-12 lg:px-24">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8 md:mb-16 gap-6 md:gap-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-astrospace text-center lg:text-left lg:w-[648px] w-full">

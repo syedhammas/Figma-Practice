@@ -52,8 +52,8 @@ export default function GameSlider() {
     return (
         <section className="w-full flex flex-col items-center mt-8 overflow-visible">
             <h2 className="font-astrospace text-[40px] md:text-[48px] font-extrabold text-white text-center tracking-wide mb-2 mt-[50px]">
-                GAME{" "}
-                <span className="text-blue-400">SERVERS</span>
+                GAME
+                <span className="text-blue-400"> SERVERS</span>
             </h2>
             <p className="text-white/80 text-lg text-center mb-8">
                 Create your own server in one click

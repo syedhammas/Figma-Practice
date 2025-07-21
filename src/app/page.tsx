@@ -22,6 +22,7 @@ export default function Home() {
 				<section className="w-full flex justify-center items-center">
 					<div className="container flex flex-col lg:flex-row items-center justify-center py-10 lg:py-20 px-4 gap-10">
 						<div className="w-full lg:w-1/2">
+							{/* Input Field */}
 							<div className="flex flex-col sm:flex-row justify-between border-[#395BEF] items-center rounded-full bg-white/10 backdrop-blur-md pl-4 sm:pl-10 py-3.5 pr-3.5">
 								<input
 									type="text"
@@ -84,12 +85,27 @@ export default function Home() {
 							<h2 className="font-poppins text-xl sm:text-2xl md:text-[30px] font-medium text-center mb-2 mt-10 sm:mt-20" style={{ color: '#9CACD7', lineHeight: '40px' }}>
 								Our Game Server Partners
 							</h2>
-							<div className="flex flex-wrap justify-center items-center mt-6 gap-6 sm:gap-x-12 w-full max-w-3xl">
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">HubSpot</span>
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">loom</span>
-								<span className="text-white text-lg sm:text-2xl font-bold opacity-100 font-poppins">GitLab</span>
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">LiveChat</span>
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">monday.com</span>
+							<div className="flex flex-wrap justify-center items-center mt-6 gap-6 sm:gap-x-12 w-full max-w-4xl">
+								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
+									<img src="/5.svg" alt="Logo" className="inline w-[107px] h-9" />
+								</span>
+
+								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
+									<img src="/4.svg" alt="Logo" className="inline w-[107px] h-9" />
+								</span>
+
+								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
+									<img src="/3.svg" alt="Logo" className="inline w-[143px] h-9" />
+								</span>
+
+								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
+									<img src="/2.svg" alt="Logo" className="inline w-[139px] h-9" />
+								</span>
+
+								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
+									<img src="/1.svg" alt="Logo" className="inline w-[170px] h-9" />
+								</span>
+
 							</div>
 						</div>
 					</section>
