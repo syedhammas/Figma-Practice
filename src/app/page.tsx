@@ -1,10 +1,7 @@
 "use client";
 
 import Navbar from "./Components/Layout/Navbar/navbar";
-import Footer from "./Components/Layout/Footer/footer";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import Image from "next/image";
 import GameSlider from "./Components/GameSlider";
 import HostGame from "./Components/HostGame";
@@ -15,12 +12,16 @@ import Map from "./Components/Map";
 
 export default function Home() {
 	return (
-		<div className="w-full">
+		<div className="w-full ">
 
-			<div className="bg-[url('/herosectiongradient.webp')] bg-no-repeat bg-top relative w-full ">
+
+
+			<section className="w-full flex flex-col items-center justify-center bg-[url('/herosection.png')] bg-no-repeat bg-cover relative">
 				<Navbar />
-				<section className="w-full flex justify-center items-center">
+
+				<div className="w-full flex justify-center items-center">
 					<div className="container flex flex-col lg:flex-row items-center justify-center py-10 lg:py-20 px-4 gap-10">
+						{/* Left Column */}
 						<div className="w-full lg:w-1/2">
 							{/* Input Field */}
 							<div className="flex flex-col sm:flex-row justify-between border-[#395BEF] items-center rounded-full bg-white/10 backdrop-blur-md pl-4 sm:pl-10 py-3.5 pr-3.5">
@@ -37,11 +38,10 @@ export default function Home() {
 								</button>
 							</div>
 
+							{/* Heading */}
 							<h1 className="font-astrospace text-3xl sm:text-4xl md:text-5xl lg:text-[56px] py-8 lg:py-[69.25px] leading-tight font-extrabold text-white">
-								THE MOST <span className="text-blue-400">BEASTLY</span>
-								<br className="hidden sm:block" />
-								<span className="text-blue-400">PERFORMANCE</span> FOR
-								<br className="hidden sm:block" />
+								THE MOST <span className="text-blue-400">BEASTLY</span><br className="hidden sm:block" />
+								<span className="text-blue-400">PERFORMANCE</span> FOR<br className="hidden sm:block" />
 								YOUR <span className="text-blue-400">GAME SERVER!</span>
 							</h1>
 
@@ -58,6 +58,7 @@ export default function Home() {
 							</button>
 						</div>
 
+						{/* Right Column */}
 						<div className="w-full lg:w-1/2 flex justify-center items-center relative">
 							<div className="animate-float drop-shadow-[0_0_60px_rgba(0,180,255,0.35)] transition-all duration-700 relative">
 								<Image
@@ -65,11 +66,15 @@ export default function Home() {
 									alt="Hero Image"
 									width={600}
 									height={700}
-									className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-cover" />
+									className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-cover"
+								/>
 
+								{/* Light Beam 1 */}
 								<div className="absolute left-[30px] sm:left-[60px] top-[-60px] sm:top-[-80px] w-[60px] sm:w-[90px] h-[120px] sm:h-[200px] pointer-events-none z-10">
 									<div className="w-full bg-gradient-to-b from-blue-300/60 via-blue-400/30 to-transparent rounded-2xl blur-2xl animate-beam"></div>
 								</div>
+
+								{/* Light Beam 2 */}
 								<div className="absolute left-[120px] sm:left-[250px] top-[-50px] sm:top-[-60px] w-[50px] sm:w-[70px] h-[100px] sm:h-[160px] pointer-events-none z-10">
 									<div className="w-full bg-gradient-to-b from-blue-200/40 via-blue-400/20 to-transparent rounded-2xl blur-2xl animate-beam2"></div>
 								</div>
@@ -78,49 +83,48 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</section>
-				<div className="w-full relative bg-gradient-to-b from-transparent -mt-16 sm:-mt-24 to-[#191928] bg-[url('/hero2.png')] bg-cover bg-top bg-no-repeat">
-					<section className="w-full flex justify-center items-center pt-16 pb-6 px-4">
-						<div className="container flex flex-col items-center">
-							<h2 className="font-poppins text-xl sm:text-2xl md:text-[30px] font-medium text-center mb-2 mt-10 sm:mt-20" style={{ color: '#9CACD7', lineHeight: '40px' }}>
-								Our Game Server Partners
-							</h2>
-							<div className="flex flex-wrap justify-center items-center mt-6 gap-6 sm:gap-x-12 w-full max-w-4xl">
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
-									<img src="/5.svg" alt="Logo" className="inline w-[107px] h-9" />
-								</span>
-
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
-									<img src="/4.svg" alt="Logo" className="inline w-[107px] h-9" />
-								</span>
-
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
-									<img src="/3.svg" alt="Logo" className="inline w-[143px] h-9" />
-								</span>
-
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
-									<img src="/2.svg" alt="Logo" className="inline w-[139px] h-9" />
-								</span>
-
-								<span className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins">
-									<img src="/1.svg" alt="Logo" className="inline w-[170px] h-9" />
-								</span>
-
-							</div>
-						</div>
-					</section>
-
-					<GameSlider />
-					<HostGame />
 				</div>
+
+				{/* Partners Section */}
+				<section className="w-full flex flex-col justify-center items-center pt-16 pb-6 px-4">
+					<div className="container flex flex-col items-center">
+						<h2 className="font-poppins text-xl sm:text-2xl md:text-[30px] font-medium text-center mb-2 mt-10 sm:mt-20 text-[#9CACD7] leading-10">
+							Our Game Server Partners
+						</h2>
+
+						<div className="flex flex-wrap justify-center items-center mt-6 gap-6 sm:gap-x-12 w-full max-w-4xl">
+							{["5.svg", "4.svg", "3.svg", "2.svg", "1.svg"].map((logo, index) => (
+								<span
+									key={index}
+									className="text-white text-base sm:text-xl font-semibold opacity-80 font-poppins"
+								>
+									<img src={`/${logo}`} alt="Logo" className="inline w-auto h-9" />
+								</span>
+							))}
+						</div>
+
+						<div className="text-center">
+							<h2 className="font-astrospace mb-2.5 mt-12 text-[40px] md:text-[48px] font-extrabold text-white text-center tracking-wide">
+								GAME<span className="text-blue-400"> SERVERS</span>
+							</h2>
+							<p className="text-white/80 text-lg text-center mb-24">
+								Create your own server in one click
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+
+
+			<div className="w-full relative bg-gradient-to-b from-transparent -mt-16 sm:-mt-24 to-[#191928] bg-[url('/hero2.png')] bg-cover bg-top bg-no-repeat">
+
+
+				<GameSlider />
+				<HostGame />
 			</div>
-
-
-
 			<LeadingServer />
 			<GameServers />
 			<Map />
-			<Footer />
 		</div>
 
 

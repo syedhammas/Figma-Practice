@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Footer from './Layout/Footer/footer';
 
 export default function Map() {
 	return (
-		<section className="w-full py-24 px-4 relative overflow-hidden bg-[url('/hero8.png')] bg-cover bg-no-repeat flex flex-col items-center">
+		<section className="w-full pt-24 px-4 relative overflow-hidden bg-[url('/hero8.png')] bg-cover bg-no-repeat flex flex-col items-center">
 			{/* Data Centers */}
 			<h2 className="text-center text-6xl font-astrospace  text-white mb-2 tracking-wide uppercase">
 				OUR DATA CENTERS
@@ -70,13 +71,14 @@ export default function Map() {
 			</div>
 
 			{/* FAQ Section */}
+
 			<h2 className="text-center text-6xl font-astrospace text-white mb-2 tracking-wide uppercase mt-8">
 				FREQUENT <span className="text-blue-400">QUESTIONS</span>
 			</h2>
 			<p className="text-blue-100 text-center mb-8 text-base sm:text-lg">
 				Click on each question to get the answer
 			</p>
-			<div className="max-w-5xl flex flex-col gap-4 px-2">
+			<div className="max-w-5xl flex flex-col gap-4 px-2 mb-36">
 				{/* FAQ Item 1 */}
 				<details className="w-5xl bg-gradient-to-br from-[#101B2B]/80 to-[#23234A]/80 border border-blue-400 rounded-xl p-9 text-white">
 					<summary className="flex justify-between items-center cursor-pointer font-semibold text-2xl">
@@ -162,6 +164,7 @@ export default function Map() {
 					</p>
 				</details>
 			</div>
+			<Footer />
 		</section>
 	)
 }
