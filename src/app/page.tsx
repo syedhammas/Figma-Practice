@@ -31,7 +31,7 @@ export default function Home() {
 									placeholder="Get a discount on your first month 🎉"
 								/>
 								<button
-									className="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-sm sm:text-base font-bold uppercase rounded-full shadow transition hover:from-blue-700 hover:to-blue-500 border-2 border-blue-400 outline-none focus:ring-2 focus:ring-blue-300 px-4 sm:px-6 py-2 sm:ml-4 mt-4 sm:mt-0"
+									className="bg-gradient-to-r from-blue-600 to-blue-400 cursor-pointer text-white text-sm sm:text-base font-bold uppercase rounded-full shadow transition hover:from-blue-700 hover:to-blue-500 border-2 border-blue-400 outline-none focus:ring-2 focus:ring-blue-300 px-4 sm:px-6 py-2 sm:ml-4 mt-4 sm:mt-0"
 									style={{ minWidth: '180px', minHeight: '50px' }}
 								>
 									15% FIRST MONTH
@@ -53,7 +53,7 @@ export default function Home() {
 								More than just a Gaming Server Rental service, we are the preferred hosting for thousands of gamers! Our servers powered by AMD RYZEN 7 and 9 CPUs with NVME storage are designed for the most demanding gamers. Enjoy total control, fast support and 24/7 uninterrupted performance. Create your game server in minutes and deliver the best experience to your gamers!
 							</p>
 
-							<button className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-sm sm:text-lg font-bold px-6 sm:px-10 py-3 sm:py-4 rounded-full shadow hover:from-blue-700 hover:to-blue-500 transition w-fit relative z-20">
+							<button className="flex items-center gap-2 bg-gradient-to-r from-blue-600 cursor-pointer to-blue-400 text-white text-sm sm:text-lg font-bold px-6 sm:px-10 py-3 sm:py-4 rounded-full shadow hover:from-blue-700 hover:to-blue-500 transition w-fit relative z-20">
 								SEE GAMES <span role="img" aria-label="gamepad">🎮</span>
 							</button>
 						</div>

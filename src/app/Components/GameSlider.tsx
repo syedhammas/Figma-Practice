@@ -115,8 +115,8 @@ export default function GameSlider() {
                         >
                             <div
                                 className={`relative flex flex-col items-center justify-end h-[576px] w-full rounded-3xl overflow-hidden shadow-lg border-2 ${activeIndex === idx
-                                        ? 'border-blue-400'
-                                        : 'border-transparent'
+                                    ? 'border-blue-400'
+                                    : 'border-transparent'
                                     }`}
                             >
                                 <Image
@@ -154,8 +154,8 @@ export default function GameSlider() {
                                     </p>
                                     <button
                                         className={`mt-2 px-28 py-3 w-[339px] h-[74px] rounded-full font-bold text-base shadow transition flex items-center justify-center gap-2 ${activeIndex === idx
-                                                ? 'bg-blue-500 text-white hover:bg-blue-600'
-                                                : 'bg-[#23234A]/80 text-white hover:bg-[#23234A]'
+                                            ? 'bg-blue-500 text-white hover:bg-blue-600'
+                                            : 'bg-[#23234A]/80 text-white hover:bg-[#23234A]'
                                             }`}
                                     >
                                         SEE PLANS <span aria-hidden>↗</span>
@@ -172,7 +172,7 @@ export default function GameSlider() {
                 <div className="flex items-center m-12 gap-4">
                     <button
                         ref={prevRef}
-                        className="text-white text-4xl w-12 h-12 rounded-full transition-all duration-200 flex items-center justify-center"
+                        className="text-white text-4xl w-12 h-12 cursor-pointer rounded-full transition-all duration-200 flex items-center justify-center"
                         aria-label="Previous"
                     >
                         &lt;
@@ -183,7 +183,7 @@ export default function GameSlider() {
                     />
                     <button
                         ref={nextRef}
-                        className="text-white text-4xl w-12 h-12 rounded-full transition-all duration-200 flex items-center justify-center"
+                        className="text-white text-4xl w-12 h-12 cursor-pointer rounded-full transition-all duration-200 flex items-center justify-center"
                         aria-label="Next"
                     >
                         &gt;

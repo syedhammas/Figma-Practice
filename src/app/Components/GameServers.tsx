@@ -167,12 +167,12 @@ export default function CustomSwiper() {
 			</div>
 
 			{/* Bottom Feature Strip */}
-			<div className="w-full max-w-[1657px] h-auto mx-auto mt-24 bg-[url('/mask.svg')] bg-cover bg-center flex flex-col items-center justify-center px-4 py-12 sm:py-16 lg:py-20 relative">
-				<h4 className="text-white text-center text-2xl sm:text-3xl lg:text-4xl leading-relaxed font-astrospace mb-10 tracking-wide uppercase max-w-[90%] md:max-w-[85%]">
+			<div className="w-[1657px] h-[497px] mx-auto mt-24 bg-[url('/mask.svg')] flex flex-col items-center justify-center relative">
+				<h4 className="text-white text-center text-4xl w-[1412px] leading-20 font-astrospace mb-10 tracking-wide uppercase">
 					GAMEPROHOST, IS DESIGNED TO EMPOWER COMPANIES AND OFFER THE BEST EXPERIENCE AND QUALITY IN GAME SERVERS.
 				</h4>
-				<div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 text-blue-100 text-base sm:text-lg font-medium w-full px-2 md:px-10">
-					{["99.99 % de tiempo de actividad", "Unidades de discos SSD NVME", "AMD RYZEN 7 y 9"].map((text, i) => (
+				<div className="flex flex-wrap justify-center gap-12 text-blue-100 text-lg font-medium w-full">
+					{['99.99 % de tiempo de actividad', 'Unidades de discos SSD NVME', 'AMD RYZEN 7 y 9'].map((text, i) => (
 						<span key={i} className="flex items-center gap-2">
 							<svg width="20" height="20" fill="#fff" viewBox="0 0 20 20">
 								<circle cx="10" cy="10" r="10" fill="#fff" />

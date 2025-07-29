@@ -180,7 +180,7 @@ export default function LeadingServer() {
                         <br />
                         NOTHING WILL SLOW DOWN YOUR GAMES.
                     </h2>
-                    <button className="mt-6 mb-12 px-10 py-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold text-lg shadow-lg hover:from-blue-700 hover:to-blue-500 transition">
+                    <button className="mt-6 mb-12 px-10 py-4 rounded-full cursor-pointer bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold text-lg shadow-lg hover:from-blue-700 hover:to-blue-500 transition">
                         START YOUR SERVER RIGHT NOW
                     </button>
                     <div className="relative shadow-lg flex items-center flex-col mt-12">
